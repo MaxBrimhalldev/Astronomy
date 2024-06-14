@@ -8,7 +8,7 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
-		if(data.media_type === 'Image'){
+		if(data.media_type === 'image'){
 			document.querySelector('img').src = data.hdurl
 		}else{
 			document.querySelector('iframe').src = data.url
